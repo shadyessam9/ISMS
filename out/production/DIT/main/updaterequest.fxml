@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane minHeight="-Infinity" minWidth="-Infinity" prefHeight="670.0" prefWidth="606.0" style="-fx-background-color: #1A1818;"  xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.updaterequestcontroller">
+    <children>
+        <Button fx:id="create" layoutX="15.0" layoutY="583.0" mnemonicParsing="false" prefHeight="60.0" prefWidth="573.0" style="-fx-background-color: #50B212;" text="CLOSE REQUEST" textFill="WHITE">
+            <font>
+                <Font name="System Bold" size="20.0" />
+            </font>
+        </Button>
+        <Button layoutX="561.0" layoutY="12.0" mnemonicParsing="false" onAction="#exit" prefHeight="27.0" prefWidth="34.0" style="-fx-background-color: #3D60CF;" text="&lt;" textFill="WHITE">
+            <font>
+                <Font name="System Bold" size="15.0" />
+            </font></Button>
+        <TextField fx:id="id" alignment="CENTER" layoutX="15.0" layoutY="165.0" prefHeight="44.0" prefWidth="298.0" promptText=".........." style="-fx-background-radius: 5; -fx-background-color: #E2E2E2;">
+            <font>
+                <Font name="System Bold" size="13.0" />
+            </font>
+        </TextField>
+        <Label layoutX="45.0" layoutY="125.0" text="REQUEST_ID" textFill="#3d60cf">
+            <font>
+                <Font name="System Bold" size="18.0" />
+            </font>
+        </Label>
+        <Circle fill="#f2cd13" layoutX="33.0" layoutY="139.0" radius="7.0" stroke="TRANSPARENT" strokeType="INSIDE" />
+        <Label layoutX="42.0" layoutY="234.0" text="REQUEST" textFill="#3d60cf">
+            <font>
+                <Font name="System Bold" size="18.0" />
+            </font>
+        </Label>
+        <Circle fill="#f2cd13" layoutX="29.0" layoutY="248.0" radius="7.0" stroke="TRANSPARENT" strokeType="INSIDE" />
+        <TextField fx:id="request" alignment="CENTER" layoutX="15.0" layoutY="279.0" prefHeight="262.0" prefWidth="371.0" promptText=".........." style="-fx-background-radius: 5; -fx-background-color: #E2E2E2;">
+            <font>
+                <Font name="System Bold" size="13.0" />
+            </font>
+        </TextField>
+      <TextField fx:id="asscid" alignment="CENTER" layoutX="15.0" layoutY="34.0" prefHeight="44.0" prefWidth="380.0" promptText=".........." style="-fx-background-radius: 5; -fx-background-color: #E2E2E2;">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </TextField>
+      <Button fx:id="search" layoutX="402.0" layoutY="34.0" mnemonicParsing="false" onAction="#search" prefHeight="31.0" prefWidth="113.0" style="-fx-background-color: #3D60CF;" text="SEARCH" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Button>
+      <Label fx:id="d" layoutX="177.0" layoutY="240.0" prefHeight="17.0" prefWidth="207.0" />
+    </children>
+</AnchorPane>

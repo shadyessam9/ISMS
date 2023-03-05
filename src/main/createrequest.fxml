@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane minHeight="-Infinity" minWidth="-Infinity" prefHeight="550.0" prefWidth="511.0" style="-fx-background-color: #1A1818;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.createrequestcontroller">
+    <children>
+        <Button fx:id="create" layoutX="13.0" layoutY="476.0" mnemonicParsing="false" onAction="#createrequest" prefHeight="60.0" prefWidth="487.0" style="-fx-background-color: #50B212;" text="CREATE" textFill="WHITE">
+            <font>
+                <Font name="System Bold" size="20.0" />
+            </font>
+        </Button>
+        <Button layoutX="467.0" layoutY="11.0" mnemonicParsing="false" onAction="#exit" prefHeight="27.0" prefWidth="34.0" style="-fx-background-color: #3D60CF;" text="&lt;" textFill="WHITE">
+            <font>
+                <Font name="System Bold" size="15.0" />
+            </font></Button>
+        <TextField fx:id="asscid" alignment="CENTER" layoutX="20.0" layoutY="74.0" prefHeight="44.0" prefWidth="298.0" promptText=".........." style="-fx-background-radius: 5; -fx-background-color: #E2E2E2;">
+            <font>
+                <Font name="System Bold" size="13.0" />
+            </font>
+        </TextField>
+        <Label layoutX="40.0" layoutY="34.0" text="DEVICE_ID" textFill="#3d60cf">
+            <font>
+                <Font name="System Bold" size="18.0" />
+            </font>
+        </Label>
+        <Circle fill="#f2cd13" layoutX="20.0" layoutY="48.0" radius="7.0" stroke="TRANSPARENT" strokeType="INSIDE" />
+        <Label layoutX="40.0" layoutY="143.0" text="REQUEST" textFill="#3d60cf">
+            <font>
+                <Font name="System Bold" size="18.0" />
+            </font>
+        </Label>
+        <Circle fill="#f2cd13" layoutX="20.0" layoutY="157.0" radius="7.0" stroke="TRANSPARENT" strokeType="INSIDE" />
+        <TextField fx:id="request" alignment="CENTER" layoutX="20.0" layoutY="188.0" prefHeight="262.0" prefWidth="371.0" promptText=".........." style="-fx-background-radius: 5; -fx-background-color: #E2E2E2;">
+            <font>
+                <Font name="System Bold" size="13.0" />
+            </font>
+        </TextField>
+    </children>
+</AnchorPane>

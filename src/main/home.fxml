@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="606.0" prefWidth="870.0" style="-fx-background-color: #1A1818;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.homeController">
+   <children>
+      <Pane prefHeight="606.0" prefWidth="200.0" style="-fx-background-color: #303030;">
+         <children>
+            <Label layoutX="64.0" layoutY="14.0" text="DONKOL IT" textFill="#3d60cf">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+            <Label layoutX="66.0" layoutY="47.0" text="INFRASTRUCTURE" textFill="#3d60cf" />
+             <Line endX="95.60000610351562" endY="3.0517578125E-5" layoutX="79.0" layoutY="153.0" startX="-64.4000015258789" startY="3.0517578125E-5" stroke="#e5e5e533" />
+             <Label layoutX="16.0" layoutY="123.0" text="Main Menu" textFill="#3d60cfab">
+                 <font>
+                     <Font size="15.0" />
+                 </font>
+             </Label>
+             <Button fx:id="report" alignment="BASELINE_LEFT" layoutY="215.0" mnemonicParsing="false" onAction="#createrep" prefHeight="40.0" prefWidth="200.0" style="-fx-background-color: #484848;" text="REPORTING" textAlignment="CENTER" textFill="#3d60cf">
+                 <font>
+                     <Font name="System Bold" size="14.0" />
+                 </font>
+                 <padding>
+                     <Insets left="5.0" right="5.0" />
+                 </padding>
+             </Button>
+
+            <Button fx:id="devices" alignment="BASELINE_LEFT" layoutY="304.0" mnemonicParsing="false" onAction="#choice" prefHeight="40.0" prefWidth="200.0" style="-fx-background-color: #484848;" text="DEVICES" textAlignment="CENTER" textFill="#3d60cf">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+               <padding>
+                  <Insets left="5.0" right="5.0" />
+               </padding>
+            </Button>
+            <Label fx:id="name" layoutX="70.0" layoutY="130.0" textFill="WHITE" />
+            <Label fx:id="depart" layoutX="70.0" layoutY="147.0" textFill="WHITE" />
+            <ImageView fitHeight="103.0" fitWidth="122.0" layoutX="-27.0" layoutY="5.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@Assets/logo.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="35.0" fitWidth="40.0" layoutX="156.0" layoutY="219.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@Assets/print.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="35.0" fitWidth="40.0" layoutX="154.0" layoutY="311.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@Assets/device.png" />
+               </image>
+            </ImageView>
+            <Button alignment="BASELINE_LEFT" layoutY="395.0" mnemonicParsing="false" onAction="#choice2" prefHeight="40.0" prefWidth="200.0" style="-fx-background-color: #484848;" text="REQUESTS" textAlignment="CENTER" textFill="#3d60cf">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+               <padding>
+                  <Insets left="5.0" right="5.0" />
+               </padding>
+            </Button>
+            <ImageView fitHeight="27.0" fitWidth="38.0" layoutX="155.0" layoutY="402.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@Assets/Icon awesome-paper-plane.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="70.0" layoutY="147.0" prefHeight="17.0" prefWidth="104.0" textFill="#fffbfb" />
+         </children></Pane>
+       <Rectangle arcHeight="20.0" arcWidth="20.0" fill="#303030" height="103.0" layoutX="238.0" layoutY="132.0" stroke="#3d60cf78" strokeType="INSIDE" width="600.0" />
+      <Rectangle arcHeight="10.0" arcWidth="20.0" height="78.0" layoutX="239.0" layoutY="30.0" stroke="#3d60cf" strokeType="INSIDE" width="312.0">
+         <fill>
+            <LinearGradient endX="0.27480912390556045" endY="0.8435114449217119" startX="0.26717558616900267" startY="0.8435114285418096">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.1882352977991104" green="0.1882352977991104" blue="0.1882352977991104" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </fill>
+      </Rectangle>
+      <TableView fx:id="dashboard" layoutX="240.0" layoutY="250.0" prefHeight="343.0" prefWidth="600.0" style="-fx-background-color: transparent;" stylesheets="@../style0.css">
+        <columns>
+          <TableColumn fx:id="device" prefWidth="100.0" text="type" />
+          <TableColumn fx:id="person" minWidth="0.0" prefWidth="150.0" text="owner" />
+            <TableColumn fx:id="info" minWidth="0.0" prefWidth="217.0" text="details" />
+           <TableColumn fx:id="rdate" minWidth="0.0" prefWidth="133.0" text="requested_on" />
+        </columns>
+      </TableView>
+      <Label layoutX="356.0" layoutY="159.0" text="ACTIVE" textFill="#3d60cf">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="nactive" layoutX="357.0" layoutY="192.0" textFill="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="544.0" layoutY="159.0" text="MAINTAIN." textFill="#3d60cf">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="nmaintain" layoutX="544.0" layoutY="193.0" textFill="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="755.0" layoutY="157.0" text="DEPREC." textFill="#3d60cf">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="ndepreciate" layoutX="757.0" layoutY="190.0" textFill="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="dayn" layoutX="251.0" layoutY="32.0" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <Label fx:id="month" layoutX="272.0" layoutY="69.0" textFill="#3d60cf">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <Label fx:id="day" layoutX="335.0" layoutY="30.0" textFill="#3d60cf">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <Label fx:id="time" layoutX="336.0" layoutY="53.0" textFill="#3d60cf">
+         <font>
+            <Font name="System Bold" size="40.0" />
+         </font>
+      </Label>
+      <Label fx:id="zone" layoutX="467.0" layoutY="34.0" textFill="WHITE">
+         <font>
+            <Font size="48.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="c" layoutX="577.0" layoutY="74.0" prefHeight="26.0" prefWidth="257.0" style="-fx-background-color: #707070; -fx-border-radius: 5;" />
+      <Label layoutX="580.0" layoutY="47.0" text="COMPANY" textFill="#3d60cf">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="103.0" fitWidth="90.0" layoutX="251.0" layoutY="139.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Assets/poweroff.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="103.0" fitWidth="90.0" layoutX="435.0" layoutY="139.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Assets/tools.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="103.0" fitWidth="90.0" layoutX="650.0" layoutY="139.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Assets/broken.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="35.0" fitWidth="40.0" layoutX="820.0" layoutY="13.0" onMouseClicked="#exit" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Assets/exit.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

@@ -1,0 +1,21 @@
+.table-view .column-header,
+.table-view .column-header-background .filler {
+    -fx-background-color:  #303030;
+    -fx-text-fill: white;
+    -fx-text-background-color: white;
+    -fx-font-weight: bold;
+}
+
+.table-view .cell{
+    -fx-cell-size: 50px;
+    -fx-font-size:10px;
+    -fx-alignment: center-left;
+    -fx-control-inner-background: #303030;
+    -fx-border-color: #303030;
+    -fx-background-radius: 5 5 5 5;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-alignment: CENTER;
+
+}
+
